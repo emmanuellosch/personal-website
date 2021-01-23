@@ -84,3 +84,47 @@ main {
   margin-top: 5rem;
 }
 
+.about-me {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+  "bioimage bio aboutme"
+  "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: turquoise 3px solid;
+}
+.bio {
+  grid-area: bio;
+  font-size: 1,5rem;
+}
+
+.job-1 {
+  grid-area: job1;
+}
+.job-2 {
+  grid-area: job2;
+}
+.job-3 {
+  grid-area: job3;
+}
+
+.job {
+  background: lighten grey, 5);
+  padding: 0,5 rem;
+  border-bottom: turquoise 5px solid;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken(grey, 10);
+  color: white ;
+  height: 60 px;
+}
