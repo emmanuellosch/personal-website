@@ -1,50 +1,171 @@
+
 * {
-    box-sizing: border-box; /* content-box */
-}
-*, *::before, *:after{ 
-box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-body {
-background-color: burlywood;
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:turquoise;
+  color: white;
+}
+
+body{
+  background-color: grey;
+  color:ivory;
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1;
+}
+
+h1, 
+h2, 
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.lg-heading {
+  color: white;
+  font-size: 6rem;
+}
+
+.sm-heading {
+  color: white;
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  filter: grayscale();
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem;
+}
+
+.text-secondary {
+color:turquoise;
+}
+
+main {
+  padding: 4rem;
+  min-height: cal(100vh -60px);
+}
+
+.icons {
+    margin-top: 1rem;
+}
+
+.icons a:hover {
+  background-color: turquoise;
+  transition: all 1,5s;
+}
+
+.cover {
+  border-radius: 50%; 
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+}
+
+.about-me {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+  "bioimage bio aboutme"
+  "job1 job2 job3";
+  grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
+
 
 }
 
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: turquoise 3px solid;
+}
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
 
+.job-1 {
+  grid-area: job1;
+}
+.job-2 {
+  grid-area: job2;
+}
+.job-3 {
+  grid-area: job3;
+}
+
+.job {
+  background-color: darkgrey;
+  padding: 0.5 rem;
+  border-bottom: turquoise 5px solid;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: black;
+  color: white ;
+  height: 60 px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-me {
+grid-template-areas: 
+"bioimage"
+"bio"
+"aboutme"
+"job1"
+"job2"
+"job3";
+grid-template-columns: 1fr;
+}
+
+  .main-footer {
+    position: relative;
+  }
+
+  .topnav {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+.main {
+  text-align: center;
+}
 h1 {
-    text-align: center;
-    font-size: 70px;
+  font-size: 2em;
 }
-
-.links {
-text-align: center;
-font-size: 15px;
-
+h2 {
+  font-size: 2em;
 }
-
-
-.intro {
-    text-align: center;
-    font-style: oblique;
-    font-size: 30px;
-    margin-top: -30px;
 
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+ 
 
-  img {
-    border-radius: 50%;
-    margin-top: 50px;
-  }
-
-.div1 {
-    width: 300px;
-  height: 100px;
-  border: 1px solid blue;  
-}
+ 
+  
