@@ -51,14 +51,14 @@ h3 {
 .sm-heading {
   color: white;
   margin-bottom: 2rem;
-  padding: 0,2rem 1rem;
+  padding: 0.2rem 1rem;
   filter: grayscale();
 }
 
 a {
   color: white;
   text-decoration: none;
-  padding: 0,4rem;
+  padding: 0.4rem;
 }
 
 .text-secondary {
@@ -105,7 +105,7 @@ main {
 }
 .bio {
   grid-area: bio;
-  font-size: 1,5rem;
+  font-size: 1.5rem;
 }
 
 .job-1 {
@@ -120,19 +120,19 @@ main {
 
 .job {
   background-color: darkgrey;
-  padding: 0,5 rem;
+  padding: 0.5 rem;
   border-bottom: turquoise 5px solid;
 }
 
 .main-footer {
   text-align: center;
-  padding: 0,5rem;
+  padding: 0.5rem;
   background-color: black;
   color: white ;
   height: 60 px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .about-me {
 grid-template-areas: 
 "bioimage"
@@ -148,20 +148,23 @@ grid-template-columns: 1fr;
     position: relative;
   }
 
-}
-  .topnav a {
-    float: none;
-    width: 100%; 
-  
-  }
-
-  .main {
-    float: none;
-		width: 98%;
-    padding: 1%;
-    background-color: grey;
+  .topnav {
+    display: grid;
+    justify-items: center;
     text-align: center;
   }
+.main {
+  text-align: center;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 2em;
+}
+}
+
+ 
 
  
   
