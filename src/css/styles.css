@@ -71,7 +71,7 @@
   height: 250px;
   background: url("./images/Download.jpeg");
   border-radius: 50%;
-  border: solid 3px #eece1a;
+  border: solid 3px #40e0d0;
 }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -81,7 +81,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu .nav-item.current > a {
-  color: #eece1a;
+  color: #40e0d0;
 }
 .menu .nav-link {
   display: inline-block;
@@ -95,7 +95,7 @@
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: chartreuse;
+  color: #40e0d0;
   transform: scale(1.25);
 }
 
@@ -129,7 +129,7 @@ body {
 }
 body#bg-img {
   background: url(./images/ich.jpg);
-  background: rgba(68, 68, 68, 0.9), url(./images/ich.jpg);
+  background: #444444e6, url(./images/ich.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -150,7 +150,7 @@ h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(73, 73, 73, 0.5);
+  background: #49494980;
 }
 
 a {
@@ -165,7 +165,7 @@ header {
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: #40e0d0;
 }
 
 main {
@@ -179,7 +179,7 @@ main .icons a {
   padding: 0.4rem;
 }
 main .icons a:hover {
-  color: #eece1a;
+  color: #40e0d0;
   transition: all 0.5s ease-out;
 }
 main#home {
@@ -199,7 +199,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid;
+  border: #40e0d0 3px solid;
 }
 .about-info .bio {
   grid-area: bio;
@@ -231,7 +231,7 @@ main#home h1 {
 }
 .projects img:hover {
   opacity: 0.5;
-  border-color: #eece1a;
+  border-color: #40e0d0;
   transition: all 0.5s ease-out;
 }
 
@@ -251,7 +251,7 @@ main#home h1 {
 }
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: #eece1a;
+  background: #40e0d0;
   color: #000;
 }
 .boxes div:hover span {
@@ -269,7 +269,7 @@ main#home h1 {
 .btn:hover,
 .btn-dark:hover,
 .btn-light:hover {
-  background: #eece1a;
+  background: #40e0d0;
   color: #000;
 }
 

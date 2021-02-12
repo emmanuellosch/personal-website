@@ -17,7 +17,7 @@ function toggleMenu() {
     menuBranding.classList.add("show");
     navItems.forEach((item) => item.classList.add("show"));
 
-    // Set Menu State
+    // Set Menu
     showMenu = true;
   } else {
     menuBtn.classList.remove("close");
@@ -26,7 +26,29 @@ function toggleMenu() {
     menuBranding.classList.remove("show");
     navItems.forEach((item) => item.classList.remove("show"));
 
-    // Set Menu State
+    // Set Menu
     showMenu = false;
   }
 }
+
+(function () {
+  // https://dashboard.emailjs.com/admin/integration
+  emailjs.init("user_i17Pfz3BIIJhSJH4QY5Ls");
+})();
+
+window.onload = function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      this.contact_number.value = (Math.random() * 100000) | 0;
+      emailjs.sendForm("contact_service", "contact_form", this).then(
+        function () {
+          console.log("SUCCESS!");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+    });
+};
