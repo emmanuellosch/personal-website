@@ -189,35 +189,35 @@ main#home h1 {
   margin-top: 20vh;
 }
 
-.about-info {
+.about {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 }
-.about-info .bio-image {
+.about-me .bio-image {
   grid-area: bioimage;
   margin: auto;
-  border-radius: 50%;
+  border-radius: 100%;
   border: #40e0d0 3px solid;
 }
-.about-info .bio {
+.about-me .bio {
   grid-area: bio;
   font-size: 1.5rem;
 }
-.about-info .job-1 {
+.about-me .job-1 {
   grid-area: job1;
 }
-.about-info .job-2 {
+.about-me .job-2 {
   grid-area: job2;
 }
-.about-info .job-3 {
+.about-me .job-3 {
   grid-area: job3;
 }
-.about-info .job {
+.about-me .job {
   background: #515151;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
+  border-bottom: #40e0d0 5px solid;
 }
 
 .projects {
@@ -283,12 +283,19 @@ main#home h1 {
   color: #333;
 }
 
-#main-footer {
+.main-footer {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
   height: 60px;
+}
+
+.footer-text {
+  display: inline-block;
+  width: 33%;
+  margin-right: 50%;
+  text-align: center;
 }
 
 @media screen and (min-width: 1171px) {
@@ -336,7 +343,7 @@ main#home h1 {
     width: 150px;
     height: 150px;
   }
-  .about-info {
+  .about-me {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }

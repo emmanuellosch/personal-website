@@ -32,7 +32,7 @@ function toggleMenu() {
 }
 
 (function () {
-  // https://dashboard.emailjs.com/admin/integration
+  https: dashboard.emailjs.com / admin / integration;
   emailjs.init("user_i17Pfz3BIIJhSJH4QY5Ls");
 })();
 
